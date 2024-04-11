@@ -37,8 +37,8 @@ header {
   );
 }
 .logo > a > img {
-  width: 96px;
-  height: 48px;
+  width: 108px;
+  height: 54px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,4 +60,9 @@ nav > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
 }
