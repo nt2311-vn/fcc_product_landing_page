@@ -8,6 +8,34 @@ html {
   display: block;
 }
 
+.logo {
+  width: 60vw;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: radial-gradient(
+    circle,
+    #30232a,
+    #291f27,
+    #221b24,
+    #1b1821,
+    #14141d,
+    #121620,
+    #0f1823,
+    #0b1a25,
+    #07232e,
+    #022c35,
+    #00363a,
+    #063f3c
+  );
+}
 .logo > a > img {
   width: 96px;
   height: 48px;
@@ -22,7 +50,14 @@ nav {
   font-weight: 600;
 }
 
-.nav-canvas {
+li {
+  list-style: none;
+  display: list-item;
+}
+
+nav > ul {
+  width: 35vw;
   display: flex;
-  flex: 1 1 0%;
+  flex-direction: row;
+  justify-content: space-around;
 }
