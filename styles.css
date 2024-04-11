@@ -17,3 +17,12 @@ html {
   text-align: center;
   margin-left: 20px;
 }
+
+nav {
+  font-weight: 600;
+}
+
+.nav-canvas {
+  display: flex;
+  flex: 1 1 0%;
+}
