@@ -8,17 +8,20 @@ html {
   display: block;
 }
 
-.logo {
-  width: 60vw;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin-top: 75px; /* To ensure content is not hidden under the fixed header */
 }
 
 header {
   position: fixed;
   top: 0;
+  width: 100%;
   min-height: 75px;
-  padding: 0px 20px;
+  padding: 0 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-image: radial-gradient(
     circle,
@@ -36,33 +39,113 @@ header {
     #063f3c
   );
 }
-.logo > a > img {
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a img {
   width: 108px;
   height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-left: 20px;
 }
 
 nav {
   font-weight: 600;
 }
 
-li {
-  list-style: none;
-  display: list-item;
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 35vw;
 }
 
-nav > ul {
-  width: 35vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+nav ul li {
+  list-style: none;
 }
 
 .nav-link {
   color: #ffffff;
   text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #f2f2f2;
+}
+
+.container {
+  padding: 20px;
+}
+
+#courses,
+#pricing,
+#community,
+#subscription,
+#video-section {
+  margin: 20px 0;
+}
+
+#subscription {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+#subscription h2 {
+  margin-bottom: 15px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+#email {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 10px;
+  background-color: #063f3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #022c35;
+}
+
+#video {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+  display: block;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #subscription {
+    padding: 10px;
+    margin: 10px 0;
+  }
 }
